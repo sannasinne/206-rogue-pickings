@@ -1,9 +1,22 @@
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container{
 	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 	margin: 0 auto;
 }
 
@@ -15,40 +28,49 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
+	text-align: center;
 }
 h2 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h3 {
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 p {
-	font-size: 14px;
+	font-size: 0.875em;
 	line-height: 21px;
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	/*height: 110px;*/
+	
 	margin: 0 auto;
 }
 
 header h1 {
-	float: left;
+	/*float: left;*/
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 0 20px;
+	border-bottom: 3px solid #77a466;
+	
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
+	/*float: right;*/
+	text-align: center;
 	padding: 46px 0;
+	
 }
 header nav ul {
 	margin: 0;
@@ -57,9 +79,11 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 0.875em;
 	padding: 0 10px;
-	display: inline;
+	list-style-type: none;
+	padding-bottom: 20px;
+	/*display: inline;*/
 }
 header nav ul li a{
 	text-decoration: none;
@@ -69,22 +93,27 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 	margin: 0 auto;
-	clear: both;
+	/*clear: both;*/
 }
 
 .main-image {
 	height: auto;
-	float: left;
+	/*float: left;*/
 }
 .main-image img {
 	width: 100%;
+	border-top: 3px solid #77a466;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
 	height: auto;
-	float: left;
+	/*float: left;*/
 }
 .main-title h2 {
 	text-align: left;
@@ -93,16 +122,16 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
-	float: left;
+	/*float: left;*/
 	border-top: 1px solid #eee;
 }
 
@@ -111,13 +140,13 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/*border-left: 1px solid #eee;
+	border-right: 1px solid #eee;*/
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px 0px;
 }
 
 .menu {
@@ -131,26 +160,31 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
+	padding: 0;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*height: 50px;*/
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
+	/*clear: both;*/
 	text-align: center;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 0.875em;
 }
