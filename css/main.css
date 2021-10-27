@@ -49,7 +49,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	/*height: 110px;*/
 	
 	margin: 0 auto;
@@ -187,4 +187,37 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/* Tablet style */
+
+@media all and (min-width: 768px) {
+	.bottom-section {
+		align-items: flex-start;
+		margin-bottom: 50px;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		flex: 1 1 30%;
+		padding: 0 1%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		
+	}
+
+	.section-three {
+		
+	}
+
+}
+
+/* Desktop styles */
+
+@media all and (min-width: 1200px) {
+
 }
